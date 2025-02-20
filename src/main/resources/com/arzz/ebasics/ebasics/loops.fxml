@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<ScrollPane prefHeight="1200.0" prefWidth="600.0" stylesheets="/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arzz.ebasics.ebasics.windowsControllers.Loops">
+    <content>
+        <AnchorPane prefHeight="1150.0" prefWidth="600.0">
+
+            <!-- Título principal -->
+            <Label layoutX="203.0" layoutY="14.0" styleClass="title" text="Algoritmos Básicos en Java" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="60.0" text="1. Sumatoria de 1 a 10" />
+            <Button fx:id="sumatoriaBtn" layoutX="152.0" layoutY="56.0" onAction="#handleSumatoria" styleClass="l-button" text="Calcular" />
+            <Label fx:id="sumatoriaResult" layoutX="20.0" layoutY="85.0" />
+
+            <!-- Separador 2 -->
+            <Line endX="580.0" endY="130.0" startX="20.0" startY="130.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 2: Sumatoria múltiplos de 5 entre 1 y 100 -->
+            <Label layoutX="20.0" layoutY="140.0" text="2. Sumatoria múltiplos de 5 (1-100)" />
+            <Button fx:id="sumatoriaMultiplesBtn" layoutX="217.0" layoutY="136.0" onAction="#handleSumatoriaMultiples" styleClass="l-button" text="Calcular" />
+            <Label fx:id="sumatoriaMultiplesResult" layoutX="20.0" layoutY="165.0" />
+
+            <!-- Separador 3 -->
+            <Line endX="580.0" endY="210.0" startX="20.0" startY="210.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 3: Tabla de multiplicar de N -->
+            <Label layoutX="20.0" layoutY="220.0" text="3. Tabla de multiplicar de N" />
+            <TextField fx:id="tablaInput" layoutX="200.0" layoutY="215.0" />
+            <Button fx:id="tablaBtn" layoutX="361.0" layoutY="215.0" onAction="#handleTabla" styleClass="l-button" text="Generar" />
+            <TextArea fx:id="tablaResult" layoutX="20.0" layoutY="260.0" prefHeight="93.0" prefWidth="560.0" />
+
+            <!-- Separador 4 -->
+            <Line endX="580.0" endY="370.0" startX="20.0" startY="370.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 4: Primeros N números primos -->
+            <Label layoutX="20.0" layoutY="390.0" text="4. Primeros N números primos" />
+            <TextField fx:id="primosInput" layoutX="200.0" layoutY="385.0" />
+            <Button fx:id="primosBtn" layoutX="360.0" layoutY="385.0" onAction="#handlePrimos" styleClass="l-button" text="Generar Primos" />
+            <TextArea fx:id="primosResult" layoutX="20.0" layoutY="420.0" prefHeight="100.0" prefWidth="560.0" />
+
+            <!-- Separador 5 -->
+            <Line endX="580.0" endY="530.0" startX="20.0" startY="530.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 5: Calcular factorial -->
+            <Label layoutX="23.0" layoutY="549.0" text="5. Calcular Factorial" />
+            <TextField fx:id="factorialInput" layoutX="203.0" layoutY="544.0" />
+            <Button fx:id="factorialBtn" layoutX="364.0" layoutY="544.0" onAction="#handleFactorial" styleClass="l-button" text="Calcular Factorial" />
+            <Label fx:id="factorialResult" layoutX="20.0" layoutY="570.0" />
+
+            <!-- Separador 6 -->
+            <Line endX="580.0" endY="610.0" startX="20.0" startY="610.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 6: Primeros N números impares -->
+            <Label layoutX="23.0" layoutY="629.0" text="6. Primeros N números impares" />
+            <TextField fx:id="imparesInput" layoutX="203.0" layoutY="624.0" />
+            <Button fx:id="imparesBtn" layoutX="365.0" layoutY="624.0" onAction="#handleImpares" styleClass="l-button" text="Generar Impares" />
+            <TextArea fx:id="imparesResult" layoutX="20.0" layoutY="660.0" prefHeight="100.0" prefWidth="560.0" />
+
+            <!-- Separador 7 -->
+            <Line endX="580.0" endY="770.0" startX="20.0" startY="770.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 7: Verificar número perfecto -->
+            <Label layoutX="20.0" layoutY="793.0" text="7. Verificar si es perfecto" />
+            <TextField fx:id="perfectoInput" layoutX="200.0" layoutY="788.0" />
+            <Button fx:id="perfectoBtn" layoutX="365.0" layoutY="789.0" onAction="#handlePerfecto" styleClass="l-button" text="Verificar Perfecto" />
+            <Label fx:id="perfectoResult" layoutX="20.0" layoutY="810.0" />
+
+            <!-- Separador 8 -->
+            <Line endX="580.0" endY="850.0" startX="20.0" startY="850.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 8: Verificar números amigos -->
+            <Label layoutX="23.0" layoutY="873.0" text="8. Verificar si son números amigos" />
+            <TextField fx:id="amigosInput1" layoutX="226.0" layoutY="869.0" />
+            <TextField fx:id="amigosInput2" layoutX="226.0" layoutY="899.0" />
+            <Button fx:id="amigosBtn" layoutX="404.0" layoutY="884.0" onAction="#handleAmigos" styleClass="l-button" text="Verificar Amigos" />
+            <Label fx:id="amigosResult" layoutX="20.0" layoutY="900.0" />
+
+            <!-- Separador 9 -->
+            <Line endX="580.0" endY="950.0" startX="20.0" startY="950.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 9: Elevar número a potencia -->
+            <Label layoutX="20.0" layoutY="981.0" text="9. Elevar número a potencia" />
+            <TextField fx:id="potenciaInputN" layoutX="200.0" layoutY="977.0" />
+            <TextField fx:id="potenciaInputP" layoutX="200.0" layoutY="1007.0" />
+            <Button fx:id="potenciaBtn" layoutX="361.0" layoutY="990.0" onAction="#handlePotencia" styleClass="l-button" text="Calcular Potencia" />
+            <Label fx:id="potenciaResult" layoutX="20.0" layoutY="1000.0" />
+
+            <!-- Separador 10 -->
+            <Line endX="580.0" endY="1050.0" startX="20.0" startY="1050.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 10: Calcular valor de e^x -->
+            <Label layoutX="20.0" layoutY="1067.0" text="10. Calcular e^x" />
+            <TextField fx:id="exInputX" layoutX="253.0" layoutY="1072.0" />
+            <Button fx:id="exBtn" layoutX="416.0" layoutY="1073.0" onAction="#handleEx" styleClass="l-button" text="Calcular e^x" />
+            <Label fx:id="exResult" layoutX="20.0" layoutY="1085.0" />
+
+            <!-- Fin del contenido -->
+
+        </AnchorPane>
+    </content>
+</ScrollPane>

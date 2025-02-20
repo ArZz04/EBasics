@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arzz.ebasics.ebasics.windowsControllers.CompareNumbers"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0">
+        <!-- Título -->
+        <Label text="Comparación de Tres Números" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+        <!-- Entradas de texto para los números -->
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Ingrese A:"/>
+            <TextField fx:id="textFieldA" promptText="Valor A"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Ingrese B:"/>
+            <TextField fx:id="textFieldB" promptText="Valor B"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Ingrese C:"/>
+            <TextField fx:id="textFieldC" promptText="Valor C"/>
+        </HBox>
+
+        <!-- Botón para realizar la comparación -->
+        <Button text="Comparar" onAction="#compareNumbers"/>
+
+        <!-- Resultado -->
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label fx:id="resultLabel" style="-fx-font-size: 14px;"/>
+        </VBox>
+
+    </VBox>
+
+</AnchorPane>

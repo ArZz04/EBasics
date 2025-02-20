@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arzz.ebasics.ebasics.windowsControllers.VideoClubDiscount"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0">
+        <!-- Título -->
+        <Label text="Promoción de Videoclub: Tres Películas por el Precio de las Dos Más Baratas"
+               style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <!-- Entradas de texto para los precios -->
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Precio de la Película 1:"/>
+            <TextField fx:id="price1" promptText="Precio de Peli 1"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Precio de la Película 2:"/>
+            <TextField fx:id="price2" promptText="Precio de Peli 2"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Precio de la Película 3:"/>
+            <TextField fx:id="price3" promptText="Precio de Peli 3"/>
+        </HBox>
+
+        <!-- Botón para calcular el precio -->
+        <Button text="Calcular Total" onAction="#calculateTotal"/>
+
+        <!-- Resultado -->
+        <Label fx:id="resultLabel" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+    </VBox>
+
+</AnchorPane>

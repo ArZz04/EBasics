@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arzz.ebasics.ebasics.windowsControllers.ConvertTemperature"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0">
+        <Label text="Conversor de Temperatura" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Temperatura en Celsius:"/>
+            <TextField fx:id="celsiusInput" promptText="Ingrese temperatura"/>
+        </HBox>
+
+        <Button text="Convertir a Fahrenheit" onAction="#convertToFahrenheit"/>
+
+        <Label fx:id="resultLabel" style="-fx-font-size: 16px;"/>
+    </VBox>
+</AnchorPane>

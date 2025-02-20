@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.arzz.ebasics.ebasics.windowsControllers.GradeToLetter"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0">
+        <Label text="Conversor de Calificaciones Numéricas a Letras" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Label text="Calificación (1-20):"/>
+            <TextField fx:id="gradeInput" promptText="Ingrese calificación"/>
+        </HBox>
+
+        <Button text="Convertir" onAction="#convertGrade"/>
+
+        <Label fx:id="resultLabel" style="-fx-font-size: 16px;"/>
+
+        <VBox alignment="CENTER_LEFT" spacing="5.0">
+            <Label text="Tabla de conversión:" style="-fx-font-weight: bold;"/>
+            <Label text="A = 19 y 20"/>
+            <Label text="B = 16, 17 y 18"/>
+            <Label text="C = 13, 14 y 15"/>
+            <Label text="D = 10, 11 y 12"/>
+            <Label text="E = 1 hasta 9"/>
+        </VBox>
+    </VBox>
+</AnchorPane>
