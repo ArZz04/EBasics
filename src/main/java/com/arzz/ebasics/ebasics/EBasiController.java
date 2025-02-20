@@ -105,7 +105,7 @@ public class EBasiController {
     @FXML
     public void onConditionals(ActionEvent event) {
         Stage parentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        openWindow("conditionals.fxml", "Conditionals", parentStage, parentStage.getWidth(), parentStage.getHeight());
+        openWindow("conditionals.fxml", "Conditionals", parentStage, 650, 800);
     }
 
     // Método específico para la ventana "Loops" con tamaño personalizado

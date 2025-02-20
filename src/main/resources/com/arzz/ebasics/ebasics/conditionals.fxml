@@ -1,14 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.arzz.ebasics.ebasics.windowsControllers.Conditionals"
-            prefHeight="400.0" prefWidth="600.0">
+<ScrollPane prefHeight="1034.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arzz.ebasics.ebasics.windowsControllers.Conditionals">
+    <content>
+        <AnchorPane prefHeight="1024.0" prefWidth="600.0">
 
-</AnchorPane>
+            <!-- Título principal -->
+            <Label layoutX="203.0" layoutY="14.0" styleClass="title" text="Condicionales" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="62.0" text="1. Determinar mayor entre 2 numeros" />
+            <Button fx:id="calculateBtn1" layoutX="391.0" layoutY="76.0" text="Calcular" />
+            <Label fx:id="labelResult1" layoutX="30.0" layoutY="90.0" />
+            <TextField fx:id="textField1" layoutX="233.0" layoutY="58.0" />
+            <TextField fx:id="textField2" layoutX="233.0" layoutY="88.0" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" layoutY="74.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="142.0" text="2. Determinar mayor entre 3 numeros" />
+            <Button fx:id="calculateBtn2" layoutX="442.0" layoutY="168.0" text="Calcular" />
+            <Label fx:id="labelResult2" layoutX="30.0" layoutY="170.0" />
+            <TextField fx:id="textField3" layoutX="236.0" layoutY="138.0" />
+            <TextField fx:id="textField4" layoutX="236.0" layoutY="168.0" />
+            <TextField fx:id="textField6" layoutX="396.0" layoutY="138.0" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" layoutY="153.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="221.0" text="3. Es Positivo o Negativo?: " />
+            <Button fx:id="checkBtn1" layoutX="191.0" layoutY="235.0" text="Revisar" />
+            <Label fx:id="labelResult3" layoutX="300.0" layoutY="240.0" />
+            <TextField fx:id="textField5" layoutX="46.0" layoutY="247.0" prefHeight="25.0" prefWidth="105.0" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" layoutY="231.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="297.0" text="4. Conversion de Metros a: " />
+            <Button fx:id="calculateBtn3" layoutX="190.0" layoutY="314.0" text="Calcular" />
+            <Label fx:id="labelResult4" layoutX="300.0" layoutY="300.0" />
+            <TextField layoutX="45.0" layoutY="326.0" prefHeight="25.0" prefWidth="105.0" />
+
+            <!-- Separador 1 -->
+            <Line endX="580.0" endY="50.0" layoutY="316.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <!-- Sección 1: Sumatoria de números del 1 al 10 -->
+            <Label layoutX="20.0" layoutY="384.0" text="5. Centigrados a Fahrenheit" />
+            <Button fx:id="calculateBtn4" layoutX="211.0" layoutY="410.0" text="Calcular" />
+            <Label fx:id="labelResult5" layoutX="300.0" layoutY="240.0" />
+            <TextField layoutX="46.0" layoutY="410.0" />
+             <Label layoutX="154.0" layoutY="334.0" text="mts" />
+
+             <Line endX="580.0" endY="50.0" layoutY="398.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+             <Label layoutX="20.0" layoutY="466.0" text="6. Apta para Servicio Militar?" />
+             <Button fx:id="verifyBtn1" layoutX="470.0" layoutY="470.0" text="Verificar" />
+             <TextField layoutX="46.0" layoutY="520.0" prefHeight="25.0" prefWidth="89.0" />
+             <Label layoutX="45.0" layoutY="497.0" text="Edad:" />
+             <Label layoutX="141.0" layoutY="529.0" text="Años" />
+
+            <MenuBar layoutX="220.0" layoutY="471.0" styleClass="no-style">
+                <Menu text="Genero">
+                    <MenuItem text="Hombre" />
+                    <MenuItem text="Mujer" />
+                </Menu>
+            </MenuBar>
+
+            <MenuBar layoutX="205.0" layoutY="517.0">
+                <Menu text="Nacionalidad">
+                    <MenuItem text="Extranjera" />
+                    <MenuItem text="Mexicana" />
+                </Menu>
+            </MenuBar>
+
+            <Label layoutX="340.0" layoutY="475.0" text="Genero: " />
+            <Label layoutX="340.0" layoutY="525.0" text="Nacionalidad: " />
+            <Label layoutX="340.0" layoutY="500.0" text="Edad: " />
+
+            <Label fx:id="labelResult6" layoutX="220.0" layoutY="565.0" />
+
+            <Line endX="580.0" endY="50.0" layoutY="546.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <Label layoutX="20.0" layoutY="614.0" text="7. Prestamo de un año" />
+
+            <!-- Sección 7: Cálculo del interés de un préstamo -->
+            <Line endX="580.0" endY="50.0" layoutY="660.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+            <Label layoutX="20.0" layoutY="614.0" text="7. Préstamo de un año" />
+            <Label layoutX="46.0" layoutY="645.0" text="Monto del préstamo:" />
+            <TextField layoutX="180.0" layoutY="640.0" prefHeight="25.0" prefWidth="105.0" />
+            <Button fx:id="calculateBtn5" layoutX="300.0" layoutY="640.0" text="Calcular" />
+            <Label layoutX="46.0" layoutY="680.0" text="Interés total a pagar:" />
+            <Label fx:id="labelResult7" layoutX="180.0" layoutY="680.0" />
+
+            <!-- Sección 8: Cálculo de la comisión de ventas -->
+            <Line endX="580.0" endY="50.0" layoutY="760.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+            <Label layoutX="20.0" layoutY="724.0" text="8. Comisión de ventas" />
+            <Label layoutX="46.0" layoutY="754.0" text="Monto de la venta:" />
+            <TextField layoutX="180.0" layoutY="750.0" prefHeight="25.0" prefWidth="105.0" />
+            <Button fx:id="calculateBtn6" layoutX="300.0" layoutY="750.0" text="Calcular" />
+            <Label layoutX="46.0" layoutY="780.0" text="Comisión a pagar:" />
+            <Label fx:id="labelResult8" layoutX="180.0" layoutY="780.0" />
+
+            <!-- Sección 9: Aumento de salario -->
+            <Line endX="580.0" endY="50.0" layoutY="860.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <Label layoutX="20.0" layoutY="824.0" text="9. Aumento de salario" />
+            <Label layoutX="46.0" layoutY="854.0" text="Salario actual:" />
+            <TextField layoutX="180.0" layoutY="850.0" prefHeight="25.0" prefWidth="105.0" />
+            <MenuButton fx:id="categoryMenu" layoutX="300.0" layoutY="850.0" text="Categoría">
+                <MenuItem fx:id="sindicalizado" text="Sindicalizado" />
+                <MenuItem fx:id="deConfianza" text="De confianza" />
+                <MenuItem fx:id="altoDirectivo" text="Alto directivo" />
+                <MenuItem fx:id="ejecutivo" text="Ejecutivo" />
+            </MenuButton>
+            <Button fx:id="calculateBtn7" layoutX="450.0" layoutY="850.0" text="Calcular" />
+            <Label layoutX="46.0" layoutY="880.0" text="Nuevo salario:" />
+            <Label fx:id="labelResult9" layoutX="180.0" layoutY="880.0" />
+
+            <Line endX="580.0" endY="50.0" layoutY="860.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />
+
+            <Label layoutX="20.0" layoutY="920.0" text="10. Calcular y según valor de x" />
+            <Label layoutX="46.0" layoutY="950.0" text="Valor de x:" />
+            <TextField layoutX="116.0" layoutY="946.0" prefHeight="25.0" prefWidth="105.0" />
+            <Button fx:id="calculateBtn8" layoutX="240.0" layoutY="946.0" text="Calcular" />
+            <Label layoutX="46.0" layoutY="980.0" text="Valor de y:" />
+            <Label fx:id="labelResult10" layoutX="180.0" layoutY="980.0" />
+
+
+
+        </AnchorPane>
+    </content>
+</ScrollPane>

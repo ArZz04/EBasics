@@ -9,7 +9,7 @@
         <AnchorPane prefHeight="1150.0" prefWidth="600.0">
 
             <!-- Título principal -->
-            <Label layoutX="203.0" layoutY="14.0" styleClass="title" text="Algoritmos Básicos en Java" />
+            <Label layoutX="203.0" layoutY="14.0" styleClass="title" text="CICLOS" />
 
             <!-- Separador 1 -->
             <Line endX="580.0" endY="50.0" startX="20.0" startY="50.0" stroke="gray" strokeWidth="1" />

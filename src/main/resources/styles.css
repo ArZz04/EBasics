@@ -1,3 +1,16 @@
+/* Solo se aplican estilos a MenuBar con la clase 'styled-menu' */
+.styled-menu {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: white;
+}
+
+/* Específicamente, no estilizar los MenuBar con clase 'no-style' */
+.no-style {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+/* Estilos globales */
 .root {
     -fx-background-color: #f0f0f0;
     -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -10,6 +23,7 @@
     -fx-padding: 0 0 20 0;
 }
 
+/* Botones de menú */
 .menu-button {
     -fx-background-color: #2ecc71;
     -fx-text-fill: #333333;
@@ -23,8 +37,8 @@
 }
 
 .menu-button-sub {
-    -fx-background-color: #1abc9c; /* Azul turquesa */
-    -fx-text-fill: #ffffff; /* Texto blanco para buen contraste */
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: #ffffff;
     -fx-font-size: 14px;
     -fx-padding: 10 20;
     -fx-min-width: 200px;
@@ -35,13 +49,12 @@
 }
 
 .menu-button-sub:hover {
-    -fx-background-color: #16a085; /* Azul turquesa más oscuro */
+    -fx-background-color: #16a085;
 }
 
 .menu-button-sub:pressed {
-    -fx-background-color: #1abc9c; /* Azul turquesa */
+    -fx-background-color: #1abc9c;
 }
-
 
 .menu-button:hover {
     -fx-background-color: #27ae60;
@@ -49,52 +62,4 @@
 
 .menu-button:pressed {
     -fx-background-color: #219653;
-}
-
-/* Estilo para las etiquetas */
-.l-label {
-    -fx-font-size: 16px;
-    -fx-text-fill: #333333;
-}
-
-/* Estilo para los botones */
-.l-button {
-    -fx-background-color: #2ecc71;
-    -fx-text-fill: #ffffff;
-    -fx-font-size: 14px;
-    -fx-padding: 10 20;
-    -fx-background-radius: 5;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
-}
-
-/* Estilo para los campos de entrada de texto */
-.l-text-field {
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5;
-    -fx-padding: 5;
-    -fx-background-color: #ffffff;
-}
-
-/* Estilo para las áreas de texto */
-.l-text-area {
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5;
-    -fx-padding: 5;
-    -fx-background-color: #ffffff;
-}
-
-/* Estilo para las líneas separadoras */
-.l-line {
-    -fx-stroke: gray;
-    -fx-stroke-width: 1;
-}
-
-/* Efecto hover para botones */
-.l-button:hover {
-    -fx-background-color: #27ae60;
-}
-
-/* Efecto de botón presionado */
-.l-button:pressed {
-    -fx-background-color: #1e8449;
 }
